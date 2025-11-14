@@ -4,6 +4,7 @@ import java.util.Random;
 public class Main {
      public static void main(String[] args){
          Scanner sc = new Scanner(System.in);
+         String entree = "";
 
          //Appelle de la méthode ROT13_Code et création de l'objet rot13
          ROT13_Code rot13 = new ROT13_Code();
@@ -19,8 +20,8 @@ public class Main {
          switch (choix1){
              case 1:
                  System.out.println("Saisie au clavier");
-                 String entree = sc.nextLine();
-                 System.out.println("Le texte que vous désirez encrypter: " + entree);
+                 entree = sc.nextLine();
+                 System.out.println("Le tete que vous désirez encrypter: " + entree);
                  break;
              case 2:
                  System.out.println("Random");
@@ -33,28 +34,30 @@ public class Main {
                  break;
          }
 
-//         menu.menu2();
-//         int choix2 = sc.nextInt();
-//
-//         switch (choix2){
-//             case 1:
-//                 System.out.println("ROT-13");
-//                 break;
-//             case 2:
-//                 System.out.println("Le chiffre César");
-//                 break;
-//             case 3:
-//                 System.out.println("César au choix");
-//                 break;
-//             case 4:
-//                 System.out.println("Le Poly-Alphavariante");
-//                 break;
-//             case 5:
-//                 System.out.println("Je sé po");
-//                 Random rnd = new Random();
-//                 choix2 =rnd.nextInt(1,4);
-//                 System.out.println(choix2);
-//         }
+         menu.menu2();
+         int choix2 = sc.nextInt();
+
+         switch (choix2){
+             case 1:
+                 System.out.println("ROT-13");
+                 String resultat = rot13.rot13(entree);
+                 System.out.println("Texte encrypté: " + resultat);
+                 break;
+             case 2:
+                 System.out.println("Le chiffre César");
+                 break;
+             case 3:
+                 System.out.println("César au choix");
+                 break;
+             case 4:
+                 System.out.println("Le Poly-Alphavariante");
+                 break;
+             case 5:
+                 System.out.println("Je sé po");
+                 Random rnd = new Random();
+                 choix2 =rnd.nextInt(1,4);
+                 System.out.println(choix2);
+         }
 
      }
 
