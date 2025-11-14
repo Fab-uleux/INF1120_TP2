@@ -6,7 +6,7 @@ public class Main {
          Scanner sc = new Scanner(System.in);
          String entree = "";
 
-         //Appelle de la méthode ROT13_Code et création de l'objet rot13
+         //Appelle des méthodes et création de l'objet associe
          ROT13_Code rot13 = new ROT13_Code();
          Cesar_Code cesar = new Cesar_Code();
          CesarChoix_Code cesarChoix = new CesarChoix_Code();
@@ -43,22 +43,26 @@ public class Main {
          switch (choix2){
              case 1:
                  System.out.println("ROT-13");
-                 String resultat = rot13.rot13(entree);
-                 System.out.println("Texte encrypté: " + resultat);
+                 String resultatRot13 = rot13.rot13(entree);
+                 System.out.println("Texte encrypté: " + resultatRot13);
                  break;
              case 2:
                  System.out.println("Le chiffre César");
+                 String resultatCesar = cesar.cesar(entree);
+                 System.out.println("Texte encrypté: " + resultatCesar);
                  break;
              case 3:
                  System.out.println("César au choix");
+//                 String resultaCesarChoix = cesarChoix.cesarChoix(entree);
                  break;
              case 4:
                  System.out.println("Le Poly-Alphavariante");
+//                 String resultaPolyAlpha = polyAlpha.polyAlpha(entree);
                  break;
              case 5:
                  System.out.println("Je sé po");
                  Random rnd = new Random();
-                 choix2 =rnd.nextInt(1,4);
+                 choix2 = rnd.nextInt(1,4);
                  System.out.println(choix2);
          }
 
