@@ -7,14 +7,12 @@ public class ROT13_Code {
 
         for (int i = 0; i < tab.length; i++) {
             char charactere = tab[i];
-
             //l'alphabet minuscule
             for (int j = 0; j < alphabet.length; j++) {
                 if (charactere == alphabet[j]) {
                     tab[i] = alphabet[j + 13];
                 }
             }
-
             //l'alphabet majuscule
             for (int j = 0; j < alphabetMaj.length; j++) {
                 if (charactere == alphabetMaj[j]) {
@@ -22,7 +20,6 @@ public class ROT13_Code {
                 }
             }
         }
-
         return new String(tab);
     }
 }

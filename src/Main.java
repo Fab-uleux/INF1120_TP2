@@ -29,7 +29,7 @@ public class Main {
              case 2:
                  System.out.println("Random");
                  Random rnd = new Random();
-                 int nombre =rnd.nextInt(1,5);
+                 int nombre = rnd.nextInt(1,5);
                  System.out.println(nombre);
                  break;
              case 3:
