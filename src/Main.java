@@ -8,6 +8,9 @@ public class Main {
 
          //Appelle de la méthode ROT13_Code et création de l'objet rot13
          ROT13_Code rot13 = new ROT13_Code();
+         Cesar_Code cesar = new Cesar_Code();
+         CesarChoix_Code cesarChoix = new CesarChoix_Code();
+         PolyAlpha_Code polyAlpha = new PolyAlpha_Code();
 
          //Appelle de la méthode menu_Code et création de l'objet menu
          menu_Code menu = new menu_Code();
